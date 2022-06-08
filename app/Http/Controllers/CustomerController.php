@@ -50,7 +50,7 @@ public function update_license($id)
 
  public function update_customer_license(Request $request)
  {
- //Validate
+ 
  $request->validate(['Full_name' => 'required' ]);
   $Customer = Customer::find($request->id);
   $Customer->Full_name =$request->Full_name;
